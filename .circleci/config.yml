@@ -23,7 +23,7 @@ jobs:
         - ~/.cache
         - node_modules
 #    - run: npm run start:dev
-    - run: npm run test:ci
+    - run: npm run cy:run
 
 workflows:
   version: 2
