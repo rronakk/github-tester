@@ -1,0 +1,28 @@
+{
+  "name": "github-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:record": "cypress run --record",
+    "test": "run-p --race start cy:run",
+    "test:ci": "run-p --race cy:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rronakk/github-tester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rronakk/github-tester/issues"
+  },
+  "homepage": "https://github.com/rronakk/github-tester#readme"
+}
