@@ -4,7 +4,6 @@ class OrgSignUp {
   }
 
 
-
   fillOrgName(value) {
     const field = cy.get('#organization_login');
     field.clear();

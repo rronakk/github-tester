@@ -7,12 +7,16 @@ class Header {
     return cy.get('.text-lg-left > .border-gray-dark')
   }
 
+  getAddNewLink(){
+    return cy.get('.HeaderNavlink > .octicon')
+  }
+
   getAddNewOrgLink(){
     return cy.get('[href="/organizations/new"]')
   }
 
-  getAddNewLink(){
-    return cy.get('.HeaderNavlink > .octicon')
+  getAddNewGistLink(){
+    return cy.get('.dropdown-menu > [href="https://gist.github.com/"]')
   }
 }
 
