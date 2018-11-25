@@ -1,7 +1,8 @@
 import Header from './Header';
-import SignInPage from './SignInPage';
+import SignIn from './SignIn';
+import OrgSignUp from './OrgSignUp';
 
-class HomePage {
+class Home {
   constructor() {
     this.header = new Header();
   }
@@ -18,9 +19,19 @@ class HomePage {
     const link = this.header.getSignInLink();
     link.click();
 
-    const signIn = new SignInPage();
+    const signIn = new SignIn();
     return signIn;
   }
+
+
+  goToOrgSignUp(){
+    this.header.getAddNewLink().click()
+    this.header.getAddNewOrgLink().click()
+
+    return new OrgSignUp();
+
+  }
+
 }
 
-export default HomePage;
+export default Home;

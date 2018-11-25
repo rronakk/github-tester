@@ -10,9 +10,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:record": "cypress run --record",
-    "test": "run-p --race start cy:run",
-    "test:ci": "run-p --race cy:run"
+    "cy:run:record": "cypress run --record"
   },
   "repository": {
     "type": "git",

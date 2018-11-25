@@ -1,4 +1,4 @@
-class SignInPage {
+class SignIn {
   visit() {
     cy.visit('/login');
   }
@@ -28,6 +28,7 @@ class SignInPage {
     const button = cy.get('.btn');
     button.click();
   }
+
 }
 
-export default SignInPage;
+export default SignIn;
